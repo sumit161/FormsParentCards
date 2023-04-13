@@ -1,0 +1,10 @@
+<div class="form-group">
+  <label for="">Product name</label>
+  <input type="text" #Pname class="form-control" />
+  <label for="">Product description</label>
+  <input type="text" #PDecs class="form-control" />
+  <div>
+    <button class="btn btn-primary m-4" (click)="Onclick2(Pname,PDecs,'Product')">add as Product</button>
+    <button class="btn btn-primary m-4" (click)="Onclick2(Pname,PDecs,'Catlog')">add as descrip...</button>
+  </div>
+</div>

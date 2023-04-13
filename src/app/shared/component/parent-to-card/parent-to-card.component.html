@@ -1,0 +1,4 @@
+<div class="card my-4" *ngFor="let item of propertybinding1" [ngClass]="{'bg-primary': item.PCat==='Product','bg-success': item.PCat==='Catlog'}">
+  <div class="card-header">{{item.pname}}</div>
+  <div class="card-body">{{item.pdecs}}</div>
+</div>

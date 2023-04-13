@@ -1,0 +1,36 @@
+<h1 class="bg-info p-4 text-center">card using ngModel</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-form-to-parent (customEvent1)="doller1($event)"></app-form-to-parent>
+    </div>
+    <div class="col-md-6">
+      <app-parent-to-card [propertybinding1]="ProductArray1"></app-parent-to-card>
+    </div>
+  </div>
+</div>
+<hr>
+
+<h1 class="bg-info p-4 text-center">card using elementRef</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-form-ele (customEvent2)="doller2($event)"></app-form-ele>
+    </div>
+    <div class="col-md-6">
+      <app-table-ele [propertybinding2]="ProductArray2"></app-table-ele>
+    </div>
+  </div>
+</div>
+<hr>
+<h1 class="bg-info p-4 text-center" >card using viewChild</h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <app-form-viechild (customEvent3)="doller3($event)"></app-form-viechild>
+    </div>
+    <div class="col-md-6">
+      <app-viewchild-table [propertybinding3]="ProductArray3"></app-viewchild-table>
+    </div>
+  </div>
+</div>
